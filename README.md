@@ -29,7 +29,7 @@ The Code-Reaver is the fierce spirit behind these scripts, a webdev master forgi
 1. Install [Tampermonkey](https://www.tampermonkey.net/) on your browser.
 2. Copy the script from `codereaver-browser-userscript.js` or `codereaver-webdev-tools.js`.
 3. Create a new script in Tampermonkey and paste the code.
-4. For `CodeReaver-Browser-Userscript`, replace `YOUR_XAI_API_KEY` with your xAI API key from [xAI API](https://x.ai/api).
+4. For `CodeReaver-Browser-Userscript` and all js & md files, replace `YOUR_XAI_API_KEY` with your xAI API key from [xAI API](https://x.ai/api).
 5. Save and enable the script.
 
 ### Bookmarklet (No Extension)
@@ -44,7 +44,8 @@ The Code-Reaver is the fierce spirit behind these scripts, a webdev master forgi
 - xAI API key for AI tooltips (optional; local fallback available).
 
 ## Configuration
-- **API Key**: Replace `YOUR_XAI_API_KEY` in `codereaver-browser-userscript.js` with your xAI API key. Without it, tooltips use local processing.
+- **API Key**: Replace `YOUR_XAI_API_KEY` in `codereaver-browser-userscript.js` , *and all .js &
+- md files** , with your xAI API key. Without it, tooltips use local processing.
 - **Supported Sites**: Works on GitHub, GitLab, Bitbucket, and CodePen. Add more `@match` directives for other platforms.
 - **Custom Tooltips**: Use `data-tooltip` attributes to define custom tooltip content.
 - **Mobile**: Tooltips auto-hide after 3 seconds on Android for a clean experience.
