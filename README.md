@@ -49,3 +49,40 @@ Fork the repo, make changes, and submit a pull request. Ensure compatibility wit
 
 ## Issues
 Report bugs or suggest features in the [Issues](https://github.com/spiralgang/CodeReaver-Browser-Userscript/issues) section.
+
+# Recent Changes Made
+*General Webdev Enhancements:*
+
+*CodeReaver-Browser-Userscript:*
+Expanded getAITooltipText to handle code-related terms (e.g., "function", "flex") in addition to math expressions, using a regex to detect common programming keywords.
+Added hover effects to pre and code elements for better code block visibility, aiding code reviews.
+Kept the original title attribute processing but broadened the AI prompt to provide concise explanations for webdev terms.
+
+*CodeReaver-Webdev-Tools:*
+Adapted the Safari scripts’ menu enhancement logic for Chromium browsers, targeting navigation menus and code blocks.
+Added responsive click handling with debouncing and touch support for webdev tasks like navigating repositories.
+Applied visual feedback to menus and code blocks, inspired by the Safari scripts but generalized for cross-platform use.
+
+*Android Compatibility:*
+Added touch event handlers (touchstart, contextmenu) for both scripts to support Android Chromium browsers. Tooltips and menu clicks work on tap, with tooltips auto-hiding after 3 seconds.
+Included mobile-friendly CSS with media queries (@media (max-width: 600px)) to adjust tooltip size (max-width: 80vw, smaller font) and padding for code blocks/menus.
+Used touch-action: manipulation in the secondary script to improve touch responsiveness.
+*Repository Readiness:*
+
+Updated metadata: Renamed to CodeReaver-Browser-Userscript and CodeReaver-Webdev-Tools, with @namespace set to https://github.com/spiralgang/CodeReaver-Browser-Userscript.
+Replaced broad @match patterns with specific code-hosting platforms (GitHub, GitLab, Bitbucket, CodePen).
+Removed placeholder API key and added instructions for users to add their own.
+Created a clear, developer-friendly README emphasizing webdev utility, avoiding niche terms like "math expressions."
+
+*Preserved Core APIs:*
+Kept GM_addStyle and GM_xmlhttpRequest for CodeReaver-Browser-Userscript to maintain original functionality.
+Used document.createElement('style') in CodeReaver-Webdev-Tools, consistent with the Safari scripts.
+
+*Webdev Focus:*
+Described the scripts as tools to "supercharge web development" with features like AI tooltips, code block enhancements, and responsive navigation.
+Emphasized practical use cases (code reviews, documentation, navigation) in the README to align with general webdev needs.
+
+# Notes
+API Key: CodeReaver-Browser-Userscript requires an xAI API key for AI tooltips. Without it, tooltips show raw title text. The secondary script doesn’t use the API.
+Testing: Test on Android Chromium browsers (e.g., Chrome, Samsung Internet) with Tampermonkey. Verify touch events, tooltip display, and menu responsiveness.
+Extensibility: Add more @match directives or code terms to the regex in getAITooltipText to expand functionality.
