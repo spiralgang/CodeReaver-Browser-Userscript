@@ -2,6 +2,19 @@
 
 A collection of userscripts to supercharge web development on code-hosting platforms like GitHub, GitLab, Bitbucket, and CodePen, with AI-enhanced tooltips, responsive navigation, and code block interactions, optimized for Chromium-based browsers on Android and desktop.
 
+## Meet the Code-Reaver
+
+The Code-Reaver is the spirit behind these scripts—a relentless, code-slinging entity that bends browsers to your will. Learn more about its mission and vibe in [CODE_REAVER.md](CODE_REAVER.md).
+
+## Scripts
+1. **CodeReaver-Browser-Userscript** (`codereaver-browser-userscript.js`)
+   - AI-powered tooltips for code terms and calculations in `title` attributes.
+   - Enhances code blocks with hover effects for better readability.
+2. **CodeReaver-Webdev-Tools** (`codereaver-webdev-tools.js`)
+   - Boosts responsiveness of navigation menus and code blocks.
+   - Ensures smooth interactions for webdev tasks.
+
+
 ## Scripts
 1. **CodeReaver-Browser-Userscript** (`codereaver-browser-userscript.js`)
    - Adds AI-powered tooltips for code terms and calculations in `title` attributes.
@@ -50,7 +63,7 @@ Fork the repo, make changes, and submit a pull request. Ensure compatibility wit
 ## Issues
 Report bugs or suggest features in the [Issues](https://github.com/spiralgang/CodeReaver-Browser-Userscript/issues) section.
 
-# Recent Changes Made
+# Changes Made
 *General Webdev Enhancements:*
 
 *CodeReaver-Browser-Userscript:*
@@ -66,10 +79,39 @@ Applied visual feedback to menus and code blocks, inspired by the Safari scripts
 *Android Compatibility:*
 Added touch event handlers (touchstart, contextmenu) for both scripts to support Android Chromium browsers. Tooltips and menu clicks work on tap, with tooltips auto-hiding after 3 seconds.
 Included mobile-friendly CSS with media queries (@media (max-width: 600px)) to adjust tooltip size (max-width: 80vw, smaller font) and padding for code blocks/menus.
-Used touch-action: manipulation in the secondary script to improve touch responsiveness.
-*Repository Readiness:*
+*Used touch-action:* manipulation in the secondary script to improve touch responsiveness.
 
-Updated metadata: Renamed to CodeReaver-Browser-Userscript and CodeReaver-Webdev-Tools, with @namespace set to https://github.com/spiralgang/CodeReaver-Browser-Userscript.
+# *Repository Readiness:*
+
+*Changes Made to the Persona*
+
+*Aligned with Userscripts:*
+Tied the Code-Reaver’s identity to the repository’s userscripts, emphasizing their webdev enhancements (tooltips, navigation, code block interactions).
+Highlighted features like AI-powered tooltips for code terms and calculations, responsive menus, and visual code block enhancements, matching the scripts’ functionality.
+
+*Developer-Friendly Tone:*
+Retained the vivid, bold aesthetic (e.g., “plasma torch,” “cyberpunk skyline”) but softened overly aggressive language (e.g., removed references to illegal hacks, taboo topics) to fit GitHub’s community standards.
+Used terms like “supercharge,” “ignite,” and “code-slinging” to appeal to web developers without sounding academic or niche.
+
+*Android Compatibility:*
+Emphasized optimization for Android Chromium browsers, referencing touch support and mobile-friendly styling in the scripts.
+Noted the scripts’ lightweight design to suit Android’s resource constraints.
+Public Repository Readiness:
+Structured the persona as a standalone markdown file (CODE_REAVER.md) for easy inclusion in the repository.
+Avoided sensitive or controversial content (e.g., “transgressive allowance”) to ensure public appropriateness.
+Linked to the xAI API for configuration and included clear instructions for using the scripts.
+
+*Webdev Focus:*
+Framed the Code-Reaver as a webdev ally, focusing on practical use cases like code reviews, documentation, and navigation on platforms like GitHub.
+Clarified that AI tooltips cover code terms (e.g., “flex” in CSS) and calculations, broadening the scope beyond math.
+
+# md Notes
+
+*API Key:* The CodeReaver-Browser-Userscript requires an xAI API key for AI features; the persona clarifies this is optional for basic tooltip functionality.
+*Testing:* Ensure the persona’s description matches the scripts’ functionality by testing on Android Chromium browsers with Tampermonkey.
+*Tone Balance:* The adapted persona keeps the bold, vivid style but avoids content that could violate GitHub’s terms (e.g., promoting illegal activities).
+
+*Updated metadata:* Renamed to CodeReaver-Browser-Userscript and CodeReaver-Webdev-Tools, with @namespace set to https://github.com/spiralgang/CodeReaver-Browser-Userscript.
 Replaced broad @match patterns with specific code-hosting platforms (GitHub, GitLab, Bitbucket, CodePen).
 Removed placeholder API key and added instructions for users to add their own.
 Created a clear, developer-friendly README emphasizing webdev utility, avoiding niche terms like "math expressions."
@@ -82,7 +124,7 @@ Used document.createElement('style') in CodeReaver-Webdev-Tools, consistent with
 Described the scripts as tools to "supercharge web development" with features like AI tooltips, code block enhancements, and responsive navigation.
 Emphasized practical use cases (code reviews, documentation, navigation) in the README to align with general webdev needs.
 
-# Notes
+# js Notes
 API Key: CodeReaver-Browser-Userscript requires an xAI API key for AI tooltips. Without it, tooltips show raw title text. The secondary script doesn’t use the API.
 Testing: Test on Android Chromium browsers (e.g., Chrome, Samsung Internet) with Tampermonkey. Verify touch events, tooltip display, and menu responsiveness.
 Extensibility: Add more @match directives or code terms to the regex in getAITooltipText to expand functionality.
